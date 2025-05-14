@@ -9,6 +9,10 @@ vim.cmd("set relativenumber")
 
 vim.g.mapleader = " "
 
+-- local THEME = "catppuccin"
+
+-- vim.cmd.colorscheme(THEME)
+
 -- keybinds
 vim.keymap.set('n', "<leader>0", ":0<CR>", {})
 vim.keymap.set('n', "<leader>e", "A<ESC>", {})

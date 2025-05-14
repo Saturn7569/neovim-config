@@ -1,15 +1,16 @@
 return {
-    "ellisonleao/gruvbox.nvim",
+    "catppuccin/nvim",
+    name = "catppuccin",
     priority = 1000,
     config = function()
-        require("gruvbox").setup({
-            terminal_colors = true,
-            italic = {
-                strings = true,
-            }
+        local FLAVOR = "mocha"
+        require("catppuccin").setup({
+            flavour = FLAVOR,
+            background = {
+                light = "latte",
+                dark = FLAVOR,
+            },
         })
-
-        vim.o.background = "dark"
-        vim.cmd("colorscheme gruvbox")
-    end,
+        vim.cmd.colorscheme("catppuccin")
+    end
 }

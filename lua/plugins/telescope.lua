@@ -5,7 +5,7 @@ return {
         config = function()
             require("telescope").setup({
                 defaults = {
-                    file_ignore_patterns = { "%.o", "%.exe", "%.dll" }
+                    file_ignore_patterns = { "%.o", "%.exe", "%.dll", ".git/%" }
                 }
             })
 
