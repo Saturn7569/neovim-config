@@ -1,9 +1,9 @@
-local TAB_SIZE = 4
+local conf = require("global_config")
 
 vim.cmd("set expandtab")
-vim.cmd("set tabstop="..TAB_SIZE)
-vim.cmd("set softtabstop="..TAB_SIZE)
-vim.cmd("set shiftwidth="..TAB_SIZE)
+vim.cmd("set tabstop="..conf.tab_size)
+vim.cmd("set softtabstop="..conf.tab_size)
+vim.cmd("set shiftwidth="..conf.tab_size)
 
 vim.cmd("set relativenumber")
 
@@ -11,7 +11,7 @@ vim.g.mapleader = " "
 
 -- local THEME = "catppuccin"
 
--- vim.cmd.colorscheme(THEME)
+--vim.cmd.colorscheme(conf.global_theme)
 
 -- keybinds
 vim.keymap.set('n', "<leader>0", ":0<CR>", {})

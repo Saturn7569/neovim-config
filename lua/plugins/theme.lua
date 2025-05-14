@@ -3,7 +3,7 @@ return {
     name = "catppuccin",
     priority = 1000,
     config = function()
-        local FLAVOR = "mocha"
+        local FLAVOR = require("global_config").themes["catppuccin"].flavor
         require("catppuccin").setup({
             flavour = FLAVOR,
             background = {
