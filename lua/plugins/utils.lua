@@ -1,4 +1,5 @@
 return {
+    -- Close buffers
     {
         "echasnovski/mini.bufremove",
         keys = {
@@ -24,5 +25,12 @@ return {
             -- Force delete buffer
             { "<leader>bX", function() require("mini.bufremove").delete(0, true) end, desc = "Delete buffer (force)" },
         },
+    },
+    -- Autoclose
+    {
+        "m4xshen/autoclose.nvim",
+        config = function()
+            require("autoclose").setup()
+        end
     },
 }
