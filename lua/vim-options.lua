@@ -6,6 +6,7 @@ vim.cmd("set softtabstop="..conf.tab_size)
 vim.cmd("set shiftwidth="..conf.tab_size)
 
 vim.cmd("set relativenumber")
+vim.cmd("set number")
 
 vim.g.mapleader = " "
 
