@@ -46,7 +46,7 @@ return {
         "folke/which-key.nvim",
         event = "VeryLazy",
         opts = {
-            preset = "helix",
+            preset = require("global_config").whichkey.preset,
         },
         keys = {
             {

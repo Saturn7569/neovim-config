@@ -7,8 +7,12 @@ M.global_theme = "catppuccin"
 M.themes = {
     ["catppuccin"] = {
         flavor = "mocha",
-        lualine = "nightfly",
+        lualine = "horizon",
     }
+}
+
+M.whichkey = {
+    preset = "modern"
 }
 
 return M
