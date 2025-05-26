@@ -21,7 +21,7 @@ return {
                 end,
                 desc = "Delete buffer"
             },
-            
+
             -- Force delete buffer
             { "<leader>bX", function() require("mini.bufremove").delete(0, true) end, desc = "Delete buffer (force)" },
         },
@@ -41,5 +41,21 @@ return {
         config = function()
             require("alpha").setup(require("alpha.themes.dashboard").config)
         end
+    },
+    {
+        "folke/which-key.nvim",
+        event = "VeryLazy",
+        opts = {
+            preset = "helix",
+        },
+        keys = {
+            {
+                "<leader>?",
+                function()
+                    require("which-key").show({ global = false })
+                end,
+                desc = "Local keymaps from whichkey",
+            }
+        }
     },
 }

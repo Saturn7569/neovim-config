@@ -15,6 +15,6 @@ vim.g.mapleader = " "
 --vim.cmd.colorscheme(conf.global_theme)
 
 -- keybinds
-vim.keymap.set('n', "<leader>0", ":0<CR>", {})
-vim.keymap.set('n', "<leader>e", "A<ESC>", {})
-vim.keymap.set('n', "<leader>lz", ":Lazy<CR>", {})
+vim.keymap.set('n', "<leader>0", ":0<CR>", { desc = "Jump to the top of the file" })
+vim.keymap.set('n', "<leader>e", "A<ESC>", { desc = "Jump to the end of the line "})
+vim.keymap.set('n', "<leader>lz", ":Lazy<CR>", { desc = "Lazy settings" })
