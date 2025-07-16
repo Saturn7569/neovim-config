@@ -1,6 +1,6 @@
 local conf = require("global_config")
 
-vim.cmd("set expandtab")
+vim.cmd("set noexpandtab")
 vim.cmd("set tabstop="..conf.tab_size)
 vim.cmd("set softtabstop="..conf.tab_size)
 vim.cmd("set shiftwidth="..conf.tab_size)
